@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #dd8daf;
+    --secondary-color: #e8f67e;
+    --tertiary-color: #42c6ea;
+    --quaternary-color: #efbdda;
+    --quinary-color: #ffdfd3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #dd8daf;
+}
+/* Header Section */
+header {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    flex-wrap: wrap;
+    top: 0;
+    bottom: 0;
+}
+header h1 {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 35px;
+}
+header h1:hover {
+    color: var(--tertiary-color);
+}
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+header a:hover {
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;    
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none; 
+ }
+ header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+/* Hero Section */
+.hero img {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+.hero {
+    border-bottom: var(--secondary-color) solid 5px;
+}
+/* About Me Section */
+   .about-me {
+    display: flex;
+   }
+   .about-me h2 {
+    border-right: var(--secondary-color) solid 5px;
+    font-size: 35px;
+    color: var(--tertiary-color);
+    margin: 30px 40px;
+   }
+   .about-me p {
+    line-height: 1.7;
+    color: var(--primary-color);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+   }
