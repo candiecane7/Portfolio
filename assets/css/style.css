@@ -5,6 +5,31 @@
     --quaternary-color: #efbdda;
     --quinary-color: #ffdfd3;
 }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -52,20 +77,32 @@ header nav ul {
  header nav ul li a, footer ul li {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 25px;
+    flex-wrap: wrap;
 }
 /* Hero Section */
- .hero img {
-    width: 100%;
-    height: 550px;
-    object-fit: cover;
- }
- .cool-subtitle {
-    position: absolute;
+.hero {
+    /* padding: 60px; */
+    background-image: url("../images/luckycharms.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    /* position: relative; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.subtitle {
+    display: inline-block;
+    position: relative;
+    top:355px;
+    left: 59%;
+    flex-wrap: wrap;
+}
+ .hero h2 {
+    /* display: inline; */
+    /* margin-top: 300px; */
    color: #ffdfd3;
-   top: 450px;
-   left: 75%;
-   font-size: 40px;
+   font-size: 3vw;
    font-style: italic;
    font-weight: bolder;
  }
@@ -84,33 +121,60 @@ header nav ul {
     border-right: var(--quaternary-color) solid 2px;
     font-size: 35px;
     color: var(--primary-color);
-    margin: 30px 40px;
+    margin: 20px 30px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding-right: 30px;
    }
-   .about-me p {
+   .section-body {
     display: flex;
     line-height: 1.7;
     color: var(--primary-color);
     font-size: 20px;
     align-items: center;
+    margin: 30px;
+   }
+   .work h2 {
+       padding-right: 240px;
    }
 
    /*Work Section*/
-.card {
+   .cards {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+   .cards img {
+        object-fit: cover;
+        border: var(--primary-color) solid 4px;
+        opacity: 70%;
+   }
+   .work {
+        display: flex;
+        justify-content: space-between;
+}
+   .cards {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
-   .card img{
+.card1 img{
+    display: inline-block;
+    width: 600px;
+}
+.card2 img{
+    width: 300px;
+}
+   /* .card img{
     width: 60%;
     height: 60%;
     object-fit: cover;
     border: var(--primary-color) solid 4px;
-    opacity: 70%;
-}
-.card img:hover {
+    opacity: 70%; 
+ } */
+    .cards img:hover {
     opacity: 100%;
 }
 
