@@ -4,7 +4,6 @@
     --tertiary-color: #42c6ea;
     --quaternary-color: #efbdda;
     --quinary-color: #ffdfd3;
-    --words:var(--primary-color)
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -42,7 +41,7 @@ body {
     background-color: var(--quinary-color);
 }
 /* Header Section */
-header, footer {
+header {
     background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
@@ -84,12 +83,10 @@ header nav ul {
 }
 /* Hero Section */
 .hero {
-    /* padding: 60px; */
     background-image: url("../images/luckycharms.jpg");
     height: 500px;
     background-size: cover;
     background-position: center;
-    /* position: relative; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -101,20 +98,18 @@ header nav ul {
     flex-wrap: wrap;
 }
  .hero h2 {
-    /* display: inline; */
-    /* margin-top: 300px; */
    color: #ffdfd3;
    font-size: 3vw;
    font-style: italic;
    font-weight: bolder;
  }
     /* About Me Section  */
-    /* .hero img {
+    .about-me img {
         width: 250px;
         height: 250px;
         display: flex;
-    }  */
-   .about-me, .work {
+    }
+   .about-me {
     display: flex;
     border: #dd8daf solid 3px;
     margin: 10px;
@@ -129,22 +124,30 @@ header nav ul {
     margin: 20px;
     
    }
-   .about-me h2, .work h2 {
+   .about-me h2, .work h2, footer h2 {
     display: flex;
-    line-height: 1.7;
     color: var(--primary-color);
     font-size: 40px;
     align-items: center;
     margin: 30px;
-    border-right: solid 2px var(--words);
+    border-right: solid 2px var(--primary-color);
+    padding: 20px;
    }
    .about-me p {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    font-size: 20px;
+    margin-left: 20px;
    }
 
    /*Work Section*/
+   .work {
+    display: flex;
+    border: #dd8daf solid 3px;
+    margin: 10px;
+    background-color: white;  
+   }
    .cards {
        display: flex;
        flex-wrap: wrap;
@@ -158,6 +161,11 @@ header nav ul {
    .work {
         display: flex;
         justify-content: space-around;
+}
+a h3 {
+    background-color: #dd8daf;
+    color: #e8f67e;
+    text-decoration: none;
 }
    .cards {
     display: flex;
@@ -188,19 +196,20 @@ header nav ul {
 }
 
    /* Footer Section */
-footer {
-    /* justify-content: space-around; */
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-}
-footer h2 {
-    font-size: 40px;
+   .contact-me {
+    display: flex;
+    border: #dd8daf solid 3px;
+    margin: 10px;
+    background-color: white;
 }
 footer ul {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     list-style: none;
+}
+address {
+    display: flex;
+    align-items: center;
 }
 footer ul li {
     display: flex;
@@ -209,7 +218,7 @@ footer ul li {
 }
 footer ul li a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 footer ul li:hover, footer ul li a:hover {
     background: var(--tertiary-color);
