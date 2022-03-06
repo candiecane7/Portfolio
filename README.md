@@ -1,9 +1,9 @@
 # Portfolio
 
-##Purpose
+## Purpose
 This is my first Portfolio. I believe I have satisfied all of the below requirements.
 
-##Criteria
+## Criteria
 GIVEN I need to sample a potential employee's previous work
 WHEN I load their portfolio
 THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
@@ -18,9 +18,9 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 
-##Built With
+## Built With
 HTML
 CSS
 
-##Website
+## Website
 https://candiecane7.github.io/Portfolio/
