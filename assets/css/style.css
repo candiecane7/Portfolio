@@ -10,7 +10,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
+/* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -29,9 +29,9 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-}
+} */
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
 }
@@ -104,11 +104,6 @@ header nav ul {
    font-weight: bolder;
  }
     /* About Me Section  */
-    .about-me img {
-        width: 250px;
-        height: 250px;
-        display: flex;
-    }
    .about-me {
     display: flex;
     border: #dd8daf solid 3px;
@@ -116,22 +111,28 @@ header nav ul {
     background-color: white;
    }
    .section-title {
-    font-size: 25px;
+    font-size: 20px;
     color: var(--primary-color);
-    margin-top: 20px;
+    margin: 5px;
     display: flex;
-    padding: 20px;
-    margin: 20px;
+     padding: 5px 20px;
+    /* text-align: right;
+    justify-content: right; */
+    margin-left: 30px; 
     
    }
    .about-me h2, .work h2, footer h2 {
-    display: flex;
+    display: flex; 
     color: var(--primary-color);
-    font-size: 40px;
-    align-items: center;
     margin: 30px;
     border-right: solid 2px var(--primary-color);
     padding: 20px;
+    align-items: center;
+    width: 55px;
+    padding: 5px 20px;
+    text-align: right;
+    justify-content: right;
+    margin-left: 30px;
    }
    .about-me p {
     display: flex;
@@ -202,6 +203,11 @@ a h3 {
     margin: 10px;
     background-color: white;
 }
+.contact-me img {
+    width: 250px;
+    height: 250px;
+    display: flex;
+}
 footer ul {
     display: flex;
     flex-wrap: wrap;
@@ -219,9 +225,4 @@ footer ul li {
 footer ul li a {
     text-decoration: none;
     color: var(--primary-color);
-}
-footer ul li:hover, footer ul li a:hover {
-    background: var(--tertiary-color);
-    color: var(--secondary-color);
-    border-radius: 20px; 
 }
