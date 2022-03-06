@@ -34,6 +34,7 @@ time, mark, audio, video {
     /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -103,12 +104,16 @@ header nav ul {
    font-style: italic;
    font-weight: bolder;
  }
+
+
     /* About Me Section  */
    .about-me {
     display: flex;
     border: #dd8daf solid 3px;
     margin: 10px;
     background-color: white;
+    display: flex;
+    flex-wrap: wrap;
    }
    .section-title {
     font-size: 20px;
@@ -116,23 +121,38 @@ header nav ul {
     margin: 5px;
     display: flex;
      padding: 5px 20px;
-    /* text-align: right;
-    justify-content: right; */
-    margin-left: 30px; 
+    margin-left: 30px;
+    flex-wrap: wrap;
+    display: flex;
     
    }
    .about-me h2, .work h2, footer h2 {
     display: flex; 
     color: var(--primary-color);
     margin: 30px;
-    border-right: solid 2px var(--primary-color);
     padding: 20px;
-    align-items: center;
-    width: 55px;
     padding: 5px 20px;
     text-align: right;
     justify-content: right;
     margin-left: 30px;
+   }
+   .section-content {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin: 5px;
+    display: flex;
+     padding: 5px 20px;
+     width: 100%;
+    /* margin-left: 30px;  */
+   } 
+   .content-title {
+       width: 10%;
+       display: flex;
+       align-items: center;
+   }
+   .content-paragraph {
+       width: 90%;
+       border-left: var(--primary-color) solid 2px;
    }
    .about-me p {
     display: flex;
@@ -149,20 +169,15 @@ header nav ul {
     margin: 10px;
     background-color: white;  
    }
-   .cards {
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: center;
-   }
    .cards img {
         object-fit: cover;
         border: var(--primary-color) solid 4px;
         opacity: 70%;
    }
-   .work {
+   /* .work {
         display: flex;
         justify-content: space-around;
-}
+} */
 a h3 {
     background-color: #dd8daf;
     color: #e8f67e;
@@ -175,6 +190,7 @@ a h3 {
     flex-wrap: wrap;
     text-align: center;
 }
+
 .card1 {
     width: 100%;
     display: flex;
@@ -190,7 +206,7 @@ a h3 {
     flex-direction: column;
 }
 .card2 img, .card3 img{
-    width: 300px;
+    width: 300px
 }
     .cards img:hover {
     opacity: 100%;
@@ -202,11 +218,13 @@ a h3 {
     border: #dd8daf solid 3px;
     margin: 10px;
     background-color: white;
+    justify-content: space-between;
 }
 .contact-me img {
     width: 250px;
     height: 250px;
     display: flex;
+    flex-wrap: wrap;
 }
 footer ul {
     display: flex;
@@ -216,13 +234,42 @@ footer ul {
 address {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 footer ul li {
     display: flex;
     font-size: 23px;
     font-style: normal;
+    flex-wrap: wrap;
 }
 footer ul li a {
     text-decoration: none;
     color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
 }
+.contact-info {
+    width: 90%;
+    border-left: var(--primary-color) solid 2px;
+    display: flex;
+    align-items: right;
+    justify-content: space-around;
+}
+
+
+/* Media Queries Section */
+@media screen and (max-width:980px) {
+    .section-content {
+        flex-direction: column;
+    }
+}
+ @media screen and (max-width:760px) {
+     .card1 img {
+         width: 300px;
+         height: 300px;
+     }
+     .footer-image img {
+         width: 200px;
+         height: 200px;
+     }
+ }   
